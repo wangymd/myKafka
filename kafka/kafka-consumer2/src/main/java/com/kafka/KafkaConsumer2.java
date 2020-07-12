@@ -12,7 +12,7 @@ public class KafkaConsumer2 {
 	private Set<String> db = new HashSet<String>();
 	
 //	@KafkaListener(id = "test2", topics = "test", groupId = "myGroup2")
-	@KafkaListener(id = "test2", topics = "test", groupId = "myGroup")
+	@KafkaListener(id = "test2", topics = "test", groupId = "myGroup2")
     public void listen2(String data) {
 		db.add(data);
         System.out.println("KafkaConsumer2:" + data + ",db size is "  + db.size());

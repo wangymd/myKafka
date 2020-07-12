@@ -16,7 +16,7 @@ public class KafkaConsumer1 {
 	 * @param data
 	 */
 //	@KafkaListener(id = "test1", topics = "test", groupId = "myGroup1")
-	@KafkaListener(id = "test1", topics = "test", groupId = "myGroup")
+	@KafkaListener(id = "test1", topics = "test", groupId = "myGroup1")
     public void listen1(String data) {
 		db.add(data);
         System.out.println("KafkaConsumer1:" + data + ",db size is "  + db.size());
